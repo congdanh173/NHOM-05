@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        width: 1089px;
+        height: 800px;
+        margin-left: 130px;
+    }
+    header {
+        width: 1089px;
+        height: 150px;
+        background-color: coral;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background-image: url(../IMG/1920x378-T3-1920x378.png);
+    }
+    nav {
+        width: 1089px;
+        height: 50px;
+    }
+    .content {
+        width: 1089px;
+        height: 550px;
+        background-color: rgb(221, 201, 201);
+        text-align: center;
+        line-height: 50px;
+    }
+    footer {
+        width: 1089px;
+        height: 100px;
+        background-color: gray;
+    }
+    .menu li {
+        float: left;
+        width: 170px;
+        list-style: none;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+        background-color:orange;
+        border-radius: 30px;
+    }
+    li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    li:hover>a {
+        color: black;
+        font-style: normal;
+    }
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    li:hover>a {
+        color: black;
+        font-style: normal;
+    }
+    li .sub-menu {
+        display: none;
+        position: absolute;
+    }
+    li:hover>.sub-menu {
+        display: block;
+    }
+    li .sub-menu li:hover>.sub-menu {
+        top: 0px;
+        left: 200px;
+    }
+    header button {
+        border: 0;
+        padding: 10px 30px;
+        border-radius: 30px;
+        background-color: orange;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    .wrap h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .content {
+        align-items: center;
+    }
+    .content-1 {
+        position: relative;
+        width: 600px;
+        height: 400px;
+        background: #fff;
+        border-radius: 30px;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+        line-height: 50px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .container-1 {
+  width: 150px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+    }
+.container-1 input#search {
+  width: 150px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+</style>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="http://127.0.0.1:5500/BTCNW/demo.html"><ion-icon name="home-outline"></ion-icon>Trang chủ</a></li>
+                    <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon>Sản phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Các dụng cụ nấu, nướng</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo1.html">Nồi, bộ nồi</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo8.html">Chảo chống dính</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Phụ kiện nhà bếp, vệ sinh</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo5.html">Dụng cụ mài dao</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo9.html">Khăn lao bếp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dụng cụ bàn ăn</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo7.html">Chén bát</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo6.html"></a>Đũa, muỗng</li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo10.htmll">Ly, bộ ly các loại</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dụng cụ bảo quản</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo4.html">Hộp đựng thực phẩm</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo3.html">Hũ gia vị</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo2.html">Màng bọc thực phẩm</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><ion-icon name="ticket-outline"></ion-icon>Khuyến mãi</a>
+                        <ul class="sub-menu">
+                            <li><a href="http://127.0.0.1:5500/demo11.html">Nồi chiên</a></li>
+                            <li><a href="http://127.0.0.1:5500/demo12.html">Bếp các loại</a></li>
+                            <li><a href="http://127.0.0.1:5500/BTCNW/demo13.html">Nồi cơm</a></li>
+                            <li><a href="http://127.0.0.1:5500/BTCNW/demo14.html">Lẩu-Nướng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><ion-icon name="call-outline"></ion-icon>Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="box">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Search..." />
+                </div>
+              </div>
+    </header>
+    <div class="content">
+        <div class="content-1">
+        <h2>THÔNG TIN LIÊN HỆ</h2>
+        <p> Mọi thông tin thắc mắc xin liên hệ: <br> <b>-Web:</b> https://www.florence.vn <br> <b>-SDT:</b> 1234567890 <br> <b>-Địa chỉ:</b>  113, Nguyễn Thái Sơn, Q.Gò Vấp, TP.HCM</p>
+        </div>
+    </div>
+        <footer>
+            <div class="wrap">
+                <h2>Florence</h2>
+                <p>Web: https://www.florence.vn <br>
+                Địa chỉ: 113, Nguyễn Thái Sơn, Q.Gò Vấp, TP.HCM</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

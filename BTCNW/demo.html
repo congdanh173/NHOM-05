@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        width: 1089px;
+        height: 800px;
+    }
+    header {
+        width: 1089px;
+        height: 150px;
+        background-color: coral;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background-image: url(../IMG/1920x378-T3-1920x378.png);
+    }
+    nav {
+        width: 1089px;
+        height: 50px;
+    }
+    .content {
+        width: 1089px;
+        height: 550px;
+        background-color: #fff;
+    }
+    aside {
+        width: 50%;
+        height: 550px;
+        background-color: antiquewhite;
+        float: left;
+    }
+    section {
+        width: 50%;
+        height: 550px;
+        background-color: rgb(221, 201, 201);
+        float: left;
+    }
+    footer {
+        width: 1089px;
+        height: 100px;
+        background-color: gray;
+    }
+    .menu li {
+        float: left;
+        width: 190px;
+        list-style: none;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+        background-color:orange;
+        border-radius: 30px;
+    }
+    li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    li:hover>a {
+        color: black;
+        font-style: normal;
+    }
+    .box-scroll {
+        width: 545px;
+        height: 505px;
+        overflow-y: scroll;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .img1 {
+        padding: 20px;
+        text-align: center;
+        line-height: 60px;
+    }
+    li:hover>a {
+        color: black;
+        font-style: normal;
+    }
+    li .sub-menu {
+        display: none;
+        position: absolute;
+    }
+    li:hover>.sub-menu {
+        display: block;
+    }
+    li .sub-menu li:hover>.sub-menu {
+        top: 0px;
+        left: 200px;
+    }
+    header button {
+        border: 0;
+        padding: 10px 30px;
+        border-radius: 30px;
+        background-color: orange;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    .wrap h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#"><ion-icon name="home-outline"></ion-icon>
+                        Trang chủ</a></li>
+                    <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon>
+                        Sản phẩm</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Các dụng cụ nấu, nướng</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo1.html">Nồi, bộ nồi</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo8.html">Chảo chống dính</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Phụ kiện nhà bếp, vệ sinh</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo5.html">Dụng cụ mài dao</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo9.html">Khăn lao bếp</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dụng cụ bàn ăn</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo7.html">Chén bát</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo6.html"></a>Đũa, muỗng</li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo10.html">Ly, bộ ly các loại</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dụng cụ bảo quản</a>
+                                <ul class="sub-menu">
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo4.html">Hộp đựng thực phẩm</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo3.html">Hũ gia vị</a></li>
+                                    <li><a href="http://127.0.0.1:5500/BTCNW/demo2.html">Màng bọc thực phẩm</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><ion-icon name="ticket-outline"></ion-icon>Khuyến mãi</a>
+                        <ul class="sub-menu">
+                            <li><a href="http://127.0.0.1:5500/BTCNW/demo11.html">Nồi chiên</a></li>
+                            <li><a href="http://127.0.0.1:5500/BTCNW/demo12.html">Bếp các loại</a></li>
+                            <li><a href="http://127.0.0.1:5500/BTCNW/demo13.html">Nồi cơm</a></li>
+                            <li><a href="http://127.0.0.1:5500/BTCNW/demo14.html">Lẩu-Nướng</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://127.0.0.1:5500/BTCNW/demo15.html"><ion-icon name="call-outline"></ion-icon>Liên hệ</a></li>
+                </ul>
+            </nav>
+            <a href="http://127.0.0.1:5500/BTCNW/demo17.html"><button class="btn">Log in</button></a>
+    </header>
+    <div class="content">
+        <aside>
+            <div class="img1">
+                <img src="https://phukienbepthanhdat.com/wp-content/uploads/2018/11/dung-cu-bep-bao-gom-gi.jpg" alt="" width="300px" height="150px"> <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1yLAhEvvWcttYbK43l0K564B3eMs9YKpPw81uo10t8A-34ql0My4VXdP9BqyuWvp3sSo&usqp=CAU" alt="" width="300" height="150px"> <br>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxPhlxjPEuxBODyUdt1edJyBkg73OxNKW-g&usqp=CAU" alt="" width="300px" height="150px">
+            </div>
+        </aside>
+        <section>
+            <h1>GIỚI THIỆU KHÔNG GIAN BẾP</h1> <br>
+            <div class="box-scroll">
+                <p>Bộ dụng cụ nhà bếp là những đồ dùng không thể thiếu được trong căn bếp. Các dụng cụ nhà bếp thông minh vừa thực hiện đúng chức năng mang lại hỗ trợ người tiêu dùng trong công việc bếp núc vừa như những món đồ trang trí cho phòng bếp thêm đẹp mắt.</p>
+                <p> <b>I. Dụng cụ nhà bếp là gì?</b><br>
+                Dụng cụ nhà bếp (thuật ngữ trong tiếng Anh là Kitchen tools) được hiểu là những dụng cụ được sử dụng phục vụ trong quá trình vào bếp bao gồm các dụng cụ làm bếp, vật dụng nhà bếp hay đồ gia dụng nhà bếp. <br>
+                <b>II. Bộ dụng cụ nhà bếp thường dùng gồm mấy loại? </b><br>
+                <b>2.1. Dụng cụ nhà bếp bằng gỗ </b><br>
+                Bộ dụng cụ nhà bếp bằng gỗ có đặc tính là khá nhẹ và có độ cứng tự nhiên nên không gây chà xát lên bề mặt nồi, chảo khi chế biến thức ăn. Ngoài ra, gỗ dẫn nhiệt chậm nên sẽ tránh cho bạn khả năng bị bỏng do cầm phải dụng cụ tiếp xúc lâu với nhiệt.    
+                Đặc biệt, hơn nữa chất liệu gỗ rất thân thiện với môi trường, không dễ nhiễm khuẩn và không bị chảy khi gặp nhiệt độ cao nên tuyệt đối an toàn cho người tiêu dùng. Đồ dùng bằng gỗ cũng có độ bền và tính thẩm mỹ cao nên rất được ưa chuộng.</p>
+                <img src="https://www.sonha.net.vn/media/news/2504_bo-dung-cu-nha-bep-bang-go.jpg" alt="">
+                <p><b>Thớt gỗ</b><br>
+                    Chảo inox hiện nay đều được tích hợp thêm chống dính luôn là sự lựa chọn của các bà nội trợ. Dụng cụ nhà bếp thông minh này có thể truyền nhiệt tốt giúp thức ăn nhanh chín hơn. Đồng thời, lớp chống dính sẽ giúp thức ăn không bị dính vào bề mặt chảo sau khi chế biến và có thể được vệ sinh một cách nhanh chóng.
+                            Chảo inox chống dính có nhiều mẫu mã, kích cỡ cho bạn thoải mái lựa chọn.</p>
+                            <img src="https://www.sonha.net.vn/media/news/2504_bo-dung-cu-nha-bep-inox.jpg" alt="">
+                            <p><b>Vỉ nướng inox</b> <br>
+                                Vi nướng làm từ inox cũng là dụng cụ nhà bếp inox được ưa chuộng trong căn bếp. Vỉ nướng inox có thể truyền nhiệt hiệu quả hỗ trợ thức ăn được nướng đều và nhanh hơn. Ngoài ra, dụng cụ này cũng rất dễ vệ sinh sau mỗi lần sử dụng nên luôn giữ được độ sạch bóng. <br>
+                                <b>Chậu rửa bát</b> <br>
+                                Chậu rửa bát là dụng cụ nhà bếp hiện đại không thể thiếu được trong mỗi căn bếp thực hiện nhiệm vụ chứa đựng nước dùng cho việc sục rửa bát đĩa sau khi sử dụng hoặc thực phẩm. Chậu rửa bát inox dễ vệ sinh, lau chùi nên luôn giữ được độ sáng bóng, góp phần tôn lên thẩm mỹ của căn bếp. 
+                                Chậu rửa bát inox có được chia thành 2 loại chính là chậu rửa 1 hố và 2 hố cùng nhiều kiểu dáng như âm bàn, dương bàn, 1 bàn, 1 cánh,... rất đa dạng, tăng thêm sự lựa chọn tùy sở thích của người tiêu dùng. <br>
+                               <b> Vòi chậu rửa chén</b> <br>
+                                Đã nhắc đến chậu rửa bát thì không thể nào bỏ qua vòi nước rửa chén. Đây chính là bộ đôi sản phẩm luôn đi cùng nhau. Vòi chậu rửa bát được sản xuất từ vật liệu inox luôn có vẻ lấp lánh, sáng bóng, góp phần tôn lên vẻ hiện đại cho căn bếp gia đình. Việc bắn dầu mỡ hay chất bẩn trong khi nấu ăn là không tránh khỏi. Chất liệu inox rất dễ lau chùi nên việc vệ sinh vòi sạch sẽ không còn là vấn đề.
+                                Vòi rửa hiện nay có nhiều dạng cần mềm, cần cứng, dây rút với đầu vòi có thể tích hợp nhiều đường nước, đáp ứng nhu cầu đa dạng của người sử dụng. Đây là bộ dụng cụ nhà bếp cao cấp được lựa chọn mua nhiều hiện nay trong căn bếp của mỗi gia đình.</p>
+                                <img src="https://www.sonha.net.vn/media/news/2504_dung-cu-nha-bep-bang-inox-chau-voi-rua-bat.jpg" alt="">
+                                <p><b>2.3. Các loại dụng cụ nhà bếp hiện đại bằng chất liệu khác </b> <br>
+                                    Ngoài những chất liệu phổ biến như inox và gỗ thì bộ dụng cụ nhà bếp được làm từ chất liệu khác cũng thu hút được rất nhiều người tiêu dùng. Bạn đọc có thể xem gợi ý từ những sản phẩm sau đây: <br>
+                                   <b>Bộ bát sứ</b><br>
+                                    Sử dụng bát đĩa làm từ chất liệu tốt, đẹp mắt cũng góp phần khiến cho bữa cơm của bạn và gia đình trở nên ngon miệng hơn. Bát đĩa làm từ chất liệu sứ thường được thiết kế rất đẹp mắt, thể hiện sự sang trọng cho bàn ăn của gia chủ. Sứ là vật liệu được nung ở nhiệt độ cao và tráng men nên không độc hại và rất an toàn với sức khỏe người sử dụng. <br>
+                                   <b> Hũ đựng gia vị bằng thủy tinh</b> <br>
+                                    Bộ hũ đựng gia vị là bộ dụng cụ nhà bếp không thể thiếu trong bếp. Hũ gia vị làm từ thủy tinh cao cấp không gây hại với kích cỡ, kiểu dáng đa dạng cho bạn nhiều sự lựa chọn. Dụng cụ nhà bếp thông minh này vừa giúp bảo quản gia vị trong điều kiện tốt vừa như đồ trang trí đẹp mắt. <br>
+                                    <b>Hộp giấy tre</b> <br>
+                                    Hộp giấy giờ đây cũng xuất hiện trên mọi bàn ăn gia đình. Tre là vật liệu thân thiện với môi trường, có độ bền bỉ cao và dẫn nhiệt kém nên bạn không lo bị nóng khi sử dụng. Hộp giấy tre được đặt trên mỗi bàn ăn vừa tiện lợi khi ăn uống vừa như đồ trang trí cho bàn ăn gia đình.
+                                    </p>
+                </div>
+            </section>
+        </div>
+        <footer>
+            <div class="wrap">
+                <h2>Florence</h2>
+                <p>Web: https://www.florence.vn <br>
+                Địa chỉ: 113, Nguyễn Thái Sơn, Q.Gò Vấp, TP.HCM</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

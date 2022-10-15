@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     *{
+        padding: 0px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        width: 1089px;
+        height: 800px;
+        margin-left: 130px;
+    }
+    header {
+        width: 1089px;
+        height: 150px;
+        background-color: coral;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 10%;
+        background-image: url(../IMG/1920x378-T3-1920x378.png);
+    }
+    nav {
+        width: 1089px;
+        height: 50px;
+    }
+    .content {
+        width: 1089px;
+        height: 500px;
+        background-color: rgb(221, 201, 201);
+    }
+    footer {
+        width: 1089px;
+        height: 100px;
+        background-color: gray;
+    }
+    .menu li {
+        float: left;
+        width: 190px;
+        list-style: none;
+        line-height: 50px;
+        text-align: center;
+        position: relative;
+        background-color:orange;
+        border-radius: 30px;
+    }
+    li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+    li:hover>a {
+        color: black;
+        font-style: normal;
+    }
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+    }
+    .img1 {
+        padding: 20px;
+        text-align: center;
+    }
+    li:hover>a {
+        color: black;
+        font-style: normal;
+    }
+    li .sub-menu {
+        display: none;
+        position: absolute;
+    }
+    li:hover>.sub-menu {
+        display: block;
+    }
+    li .sub-menu li:hover>.sub-menu {
+        top: 0px;
+        left: 200px;
+    }
+    header button {
+        border: 0;
+        padding: 10px 30px;
+        border-radius: 30px;
+        background-color: orange;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+    }
+    ul.list-person li {
+        max-width: 524px;
+        float: left;
+        text-align: center;
+    }
+    ul.list-person li a img {
+        max-width: 100%;
+        transition: all 0.3s ease-in-out;
+    }
+    ul.list-person li:hover img {
+        transform: scale(1.1);
+    }
+    .wrapper, .row {
+        width: 700px;
+    }
+    .col1, .col2, .col3, .col4, .col5, .col6 {
+        float: left;
+        width: 200px;
+        margin: 1%;
+        padding: 1%;
+        border: solid 2px black;
+    }
+    .content button {
+        border: 0;
+        padding: 10px 30px;
+        border-radius: 30px;
+        background-color: #fff;
+        color: rgb(40, 156, 40);
+        cursor: pointer;
+        text-align: center;
+    }
+    .box-scroll {
+        width: 1089px;
+        height: 550px;
+        overflow-y: scroll;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .wrap h2 {
+        color: #fff;
+        font-size: 50px;
+        line-height: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    .container-1{
+  width: 150px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.container-1 input#search{
+  width: 150px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  color: #63717f;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.container-1 input#search::-webkit-input-placeholder {
+   color: #65737e;
+}
+ 
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+   color: #65737e;  
+}
+ 
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+   color: #65737e;  
+}
+ 
+.container-1 input#search:-ms-input-placeholder {  
+   color: #65737e;  
+}
+</style>
+<body>
+    <div class="wrapper">
+        <header>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="http://127.0.0.1:5500/BTCNW/demo.html"><ion-icon name="home-outline"></ion-icon>Trang chủ</a></li>
+                        <li><a href="#"><ion-icon name="bag-handle-outline"></ion-icon>Sản phẩm</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Các dụng cụ nấu, nướng</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo1.html">Nồi, bộ nồi</a></li>
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo8.html">Chảo chống dính</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Phụ kiện nhà bếp, vệ sinh</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo5.html">Dụng cụ mài dao</a></li>
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo9.html">Khăn lao bếp</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dụng cụ bàn ăn</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo7.html">Chén bát</a></li>
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo6.html"></a>Đũa, muỗng</li>
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo10.htmll">Ly, bộ ly các loại</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dụng cụ bảo quản</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo4.html">Hộp đựng thực phẩm</a></li>
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo3.html">Hũ gia vị</a></li>
+                                        <li><a href="http://127.0.0.1:5500/BTCNW/demo2.html">Màng bọc thực phẩm</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><ion-icon name="ticket-outline"></ion-icon>Khuyến mãi</a>
+                            <ul class="sub-menu">
+                                <li><a href="http://127.0.0.1:5500/demo11.html">Nồi chiên</a></li>
+                                <li><a href="http://127.0.0.1:5500/demo12.html">Bếp các loại</a></li>
+                                <li><a href="http://127.0.0.1:5500/BTCNW/demo13.html">Nồi cơm</a></li>
+                                <li><a href="http://127.0.0.1:5500/BTCNW/demo14.html">Lẩu-Nướng</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://127.0.0.1:5500/BTCNW/demo15.html"><ion-icon name="call-outline"></ion-icon>Liên hệ</a></li>
+                    </ul>
+                </nav>
+                <div class="box">
+                    <div class="container-1">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="search" placeholder="Search..." />
+                    </div>
+                  </div>
+        </header>
+        <div class="content">
+            <div class="box-scroll">
+                <ul class="list-person">
+                    <div class="row">
+                        <h1>KHĂN LAU BẾP CÁC LOẠI</h1>
+                        <div class="col1">
+                            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/3728/234339/bhx/bo-3-khan-lau-bep-da-nang-microfiber-bach-hoa-xanh-30-x-30cm-202205231337510783_300x300.jpg" alt="" width="180px" height="200px"></a>
+                            <p>3 khăn lau đa năng BHX 30x30cm <br> 39.000 vnđ</p><br>
+                            <button class="btn">Chọn mua</button>
+                        </div>
+                        <div class="col2">
+                            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/3728/227569/bhx/khan-lau-tay-nha-bep-co-moc-treo-shine-kl07-43cm-giao-mau-ngau-nhien-202205231337329977_300x300.jpg" alt="" width="180px" height="200px"></a>
+                            <p>Khăn lau có móc Shine 27x43cm <br> 20.000 vnđ</p><br>
+                            <button class="btn">Chọn mua</button>
+                        </div>
+                        <div class="col3"
+                            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/3728/200762/bhx/loc-2-khan-lau-chong-tray-nnb-30-x-30cm-giao-mau-ngau-nhien-202205231337150318_300x300.jpg" alt="" width="180px" height="200px"></a>
+                            <p>2 khăn lau chống trầy NNB 30X30cm <br>39.000 vnđ</p><br>
+                            <button class="btn">Chọn mua</button>
+                        </div>
+                        <div class="col4">
+                            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/3728/253726/bhx/cuon-60-mieng-khan-chui-rua-ubl-37x34cm-202205310930384587_300x300.jpg" alt="" width="180px" height="200px"></a>
+                            <p>Cuộn 60 khăn chùi rửa UBL 37x34cm <br> 189.000 vnđ</p>
+                            <button class="btn"> Chọn mua</button>
+                        </div>
+                        <div class="col5">
+                            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/2787/239895/bhx/khan-uot-gia-dung-laupro-lau-bep-80-to-202205211454096555_300x300.jpg" alt="" width="180px" height="200px"></a>
+                            <p>80 tờ khăn lau bếp LAUPRO <br> 58.000 vnđ</p>
+                            <button class="btn">Chọn mua</button>
+                        </div>
+                        <div class="col6">
+                            <a href="#"><img src="https://cdn.tgdd.vn/Products/Images/2787/239898/bhx/khan-uot-lam-sach-be-mat-dung-cu-quang-hoc-laupro-hop-20-khan-202205211452099327_300x300.jpg" alt="" width="180px" height="200px"></a>
+                            <p>20 tờ khăn lau đồ quang lọc LAUPRO <br> 29.000 vnđ</p>
+                            <button class="btn">Chọn mua</button>
+                        </div>
+                    </div>
+                </ul>
+                </div>
+            </div>
+            <footer>
+                <div class="wrap">
+                    <h2>Florence</h2>
+                    <p>Web: https://www.florence.vn <br>
+                        Địa chỉ: 113, Nguyễn Thái Sơn, Q.Gò Vấp, TP.HCM</p>
+            </div>
+        </footer>
+    </div>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
